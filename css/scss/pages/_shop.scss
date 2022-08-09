@@ -1,0 +1,153 @@
+
+ #shop-content{
+    padding: 50px 0px;
+    .all-boxes{
+        .box{
+            height: 500px;
+            background-color: #fff;
+            cursor: pointer;
+            margin-top: 40px;
+            .box-img{
+                height: 60%;
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: .5s ease;
+                }
+            }
+            &:hover .box-img img{
+                transform: scale(1.1);
+
+            }
+            .box-text{
+                text-align: center;
+                width: 85%;
+                margin: auto;
+                a{
+                    color: $darkblue;
+                    font-size: 18px;
+                    font-weight: 400;
+                    transition: .5s ease;
+                    &:hover{
+                        color: $orange;
+                    }
+                   
+                }
+
+                .price{
+                    margin-left: 60px;
+                    p{
+                        font-size: 18px;
+                        color: $orange;
+                        font-weight: 700;
+                        margin-top:17px;
+                    }
+                    span{
+                        margin-left: 10px;
+                        font-size: 14px;
+                        
+                        color: $grey;
+
+                    }
+                }
+                .special{
+                    .first{
+                        position: relative;
+                        margin-right: 20px;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: 100%;
+                            width: 10px;
+                            height: 1px;
+                            margin-left: 5px;
+                            background-color: $grey;
+                        }
+                    }
+                }
+            }
+            .box-btn{
+                text-align: center;
+                margin-top: 30px;
+               a{
+                @include button-a;
+                padding: 15px 25px;
+                background-color: #fff;
+                color: $darkblue;
+                border: 1px solid rgb(231, 229, 229);
+
+               }
+                &:hover a{
+                    background-color: $orange;
+                    color: #fff;
+
+                }
+            }
+
+        }
+    }
+ }
+ #pages-shop{
+    padding: 50px 0px;
+    
+    .pages{
+       
+        .page{
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: .5s ease;
+            margin-right: 15px;
+            cursor: pointer;
+            &:hover{
+                background-color: $orange;
+                a,i{
+                    color: #fff;
+                }
+            }
+            
+            a,i{
+                display: inline-block;
+                color: $orange;
+                font-size: 18px;
+                color: $darkblue;
+                font-weight: 600;
+                
+                margin-top: 10px;
+            }
+            i{
+                margin-top: 15px;
+            }
+        }
+        .page-two{
+            background-color: $orange !important;
+            a{
+                color: #fff;
+            }
+        }
+
+    }
+ }
+ #fourlogos-shop{
+    background-color: #f3f3f4;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    .logo-img{
+        cursor: pointer;
+        filter: opacity(40%);
+        transition: .5s ease;
+        
+        &:hover{
+            filter: opacity(100%);
+
+        }
+    }
+    @media(max-width:576px){
+        text-align: center;
+    }
+}

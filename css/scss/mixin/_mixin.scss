@@ -1,0 +1,11 @@
+@mixin button-a{
+    background-color: $orange;
+    color: #fff;
+    transition: .5s ease;
+    border-radius:5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+

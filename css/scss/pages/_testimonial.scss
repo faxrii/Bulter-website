@@ -1,0 +1,96 @@
+
+ #boxes-testim{
+     padding: 80px 0px;
+     .box{
+         
+         height: 350px;
+         background-color: #fff;
+         position: relative;
+         margin-top: 40px;
+         .box-content{
+             position: absolute;
+             top: 15%;
+             width: 90%;
+             margin: auto;
+             margin-left: 30px;
+             
+            .box-text{
+                width: 80%;
+                
+                margin: auto;
+                
+               p{
+              
+               font-size: 16px;
+               color: $grey;
+               
+               
+               
+               }
+            }
+            .box-author{
+                
+                width: 80%;
+               
+                margin: auto;
+                margin-top: 50px;
+                .box-author-text{
+                   h3{
+                       font-size: 16px;
+                       color: #000;
+                       font-weight: 600;
+                   }
+                   h6{
+                       font-size: 14px;
+                       color: $orange;
+                       
+                   }
+                }
+                .box-author-ico{
+                    margin-left: 100px;
+                    i{
+                        
+                        font-size: 46px;
+                        color: $orange;
+                    }
+                }
+            }
+         }
+
+         
+
+     }
+     @media (min-width:576px) and (max-width:768px){
+        .box{
+            height:500px;
+            
+            .box-content{
+                top: 5%;
+                .box-author{
+                    .box-author-ico{
+                        margin-left: 0%;
+                    }
+                }
+            }
+        }
+     }
+
+ }
+ #fourlogos-testim{
+    background-color: #f3f3f4;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    .logo-img{
+        cursor: pointer;
+        filter: opacity(40%);
+        transition: .5s ease;
+        
+        &:hover{
+            filter: opacity(100%);
+
+        }
+    }
+    @media(max-width:576px){
+        text-align: center;
+    }
+}

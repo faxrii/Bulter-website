@@ -1,0 +1,240 @@
+
+ #details-shop-content{
+    padding: 50px 0px;
+   .box{
+    .left{
+        .img{
+            overflow: hidden;
+            &:hover img{
+                transform: scale(1.1);
+            }
+            img{
+                transition: .5s ease;
+            }
+        }
+    }
+    .right{
+        margin-top: 100px;
+        width: 65%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 82.5%;
+            left: 0%;
+        
+            background-color: $grey;
+            filter: opacity(40%);
+            width: 100%;
+            height: 1px;
+        }
+       
+       .right-head{
+        h1{
+            font-size: 22px;
+            color: $darkblue;
+        }
+       }
+       .price-text{
+        margin-top: 30px;
+        h4{
+            color: $orange;
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+            color: $darkblue;
+            text-transform: uppercase;
+            margin-left: 100px;
+            span{
+                font-weight: 700;
+            }
+        }
+       }
+       .right-main{
+        margin-top: 20px;
+        p{
+            font-size: 16px;
+            color: $grey;
+        }
+       }
+       .right-btn{
+        margin-top: 40px;
+        a{
+            @include button-a;
+            padding: 15px 20px;
+            &:hover{
+                background-color: $darkblue ;
+            }
+            
+
+        }
+       }
+       .right-ico{
+        margin-top: 50px;
+        .ico-text{
+            h1{
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-right: 10px;
+                
+            }
+        }
+        .ico{
+            margin-bottom: 10px;
+            i{
+                font-size: 10px;
+            }
+        }
+       }
+    }
+   }
+   .details-text{
+    background-color: #fff;
+    width: 100%;
+   padding: 50px 0px;
+    .head-btn{
+        width: 96%;
+        margin: auto;
+        .btn{
+        
+            width: 120px;
+            height: 50px;
+            position: relative;
+            p{
+                text-transform: uppercase;
+               
+                font-size: 14px;
+                font-weight: 600;
+                
+                position: absolute;
+                top: 27%;
+                left:13%;
+               
+            }
+    
+        }
+    
+        .left-btn{
+            background-color: $orange;
+            border-radius: 0%;
+            
+            p{
+               
+                color: #fff;
+                
+               
+            }
+    
+        }
+        .right-btn{
+            background-color: $darkwhite;
+            transition: .5s ease;
+            border-radius: 0%;
+            margin-left: 10px;
+            &:hover{
+                background-color: $orange;
+                p{
+                    color: #fff;
+                }
+            }
+            
+            p{
+               
+                color: $darkblue;
+                
+               
+            }
+    
+        }
+    }
+    .text{
+        width: 96%;
+        margin: auto;
+        margin-top: 30px;
+        p{
+            font-size: 16px;
+            color: $grey;
+        }
+    }
+   }
+   @media(max-width:576px){
+   
+    .box{
+        .left{
+            .img{
+                width: 100vw;
+                height:400px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .right{
+           
+            margin-left: 30px;
+            &:before{
+                top: 85.5%;
+                filter: opacity(60%);
+            }
+            .price-text{
+                width: 100vw;
+                p{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    .details-text{
+        position: relative;
+        
+        width: 90%;
+        margin: auto;
+        
+
+        .head-btn{
+            position: absolute;
+            left: 15%;
+            top: 10%;
+        }
+        .text{
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 70px;
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+   }
+
+   @media(min-width:576px) and (max-width:768px){
+     .box{
+        .right{
+            width: 100%;
+        }
+     }
+   }
+ }
+
+ #fourlogos-shop-details{
+    background-color: #f3f3f4;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    .logo-img{
+        cursor: pointer;
+        filter: opacity(40%);
+        transition: .5s ease;
+        
+        &:hover{
+            filter: opacity(100%);
+
+        }
+    }
+    @media(max-width:576px){
+        text-align: center;
+    }
+}
